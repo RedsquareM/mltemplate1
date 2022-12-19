@@ -1,0 +1,12 @@
+# Ignore all JENKINS_HOME except jobs directory
+/*
+!/jobs
+!/.gitignore
+!/*.xml
+
+# Note: git doesn't track folders, only file content.
+jobs/**
+!jobs/**/
+
+# Jupyter Notebook
+.ipynb_checkpoints
