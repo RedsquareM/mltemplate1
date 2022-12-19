@@ -1,0 +1,9 @@
+model: GPC Classifier 
+model params:
+  k: '1'
+  criterion: RBF kernel with different choices of the hyperparameters 
+  path: 
+tests: functional
+score: '0.79'
+X_test path: C:\..\Desktop\zifrovie\mltemplate1\data\Test_Data_X.csv
+y_test path: C:\..\Desktop\zifrovie\mltemplate1\data\Test_Data_y.csv
