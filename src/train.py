@@ -26,5 +26,11 @@ class Train:
         self.model.fit(self.X, self.y)
         pickle.dump(self.model, open('Model.pkl', 'wb'))
 
+
+# save the model to disk
+filename = 'gsp_model.sav'
+pickle.dump(self.model, open(filename, 'wb'))
+
+
 if __name__ == "__main__":
-    multi_model = Train()
+    self.model = Train()
