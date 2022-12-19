@@ -13,13 +13,13 @@ class DataLogs:
         try:
             main()
         except:
-            self.error = logging.error('Data Export Not Succesfull')
+            self.error = logging.error('Data Export is Not Succesfull')
 
     def showLogs(self):
         if self.error:
             return self.error
         else:
-            return 'Data Export Succesfull'
+            return 'Data Export is Succesfull'
 
     def writeLogs(self):
 
