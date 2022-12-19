@@ -1,0 +1,14 @@
+core.autostage
+  
+dvc-split-dataset:
+	dvc run --ignore-build-cache -d data/dataset.csv -o data/train_dataset.csv -o data/evaluation_dataset.csv -f split_dataset.dvc python split_dataset.py
+
+dvc-train:
+	dvc run --ignore-build-cache -d data/documents/ -d data/train_dataset.csv -o/assets/model.pkl -f train.dvc python train.py
+
+
+dvc checkout
+     model.pkl
+     data\features\
+
+ 

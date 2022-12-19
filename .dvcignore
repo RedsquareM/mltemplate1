@@ -1,0 +1,16 @@
+#__pycache__/
+#neatlynx.conf
+#.idea
+#/cache
+#*.pyc
+
+
+#.dvc.conf.lock
+#.DS_Store
+#build/
+#dist/
+
+#*.egg-info/
+#.eggs
+
+#hooks/*.pyc
